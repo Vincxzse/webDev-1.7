@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchantress | Wellness</title>
+    <link rel="icon" href="./pictures/Untitled design (18).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./wellnessStyle.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videos/bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="navbar">
+        <div class="website-logo">
+            <a href="3_Website_Homepage.html"><img src="pictures/websitelogo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+            <div class="nav-links">
+                <li><a href="BeautyTips.html">Beauty Tips</a></li>
+                <li><a href="./lipProducts.php" onclick="scrollToTop()">Beauty Products</a></li>
+                <li><a href="Wellness.html" id="selected">Wellness</a></li>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropper">Cardio Exercise<img src="./pictures/down-arrow.png" alt="dropdown" /></a>
+                <div class="dropdown-content">
+                    <a href="./upperEx.html" class="choice-link">Upper Body Workout</a>
+                    <a href="./LowerEx.html" class="choice-link">Lower Body Workout</a>
+                    <a href="./foods.html" class="choice-link">Recommended Healthy Foods to Eat</a>
+                </div>
+            </div>
+            <div class="right-links">
+                <li><a href="About.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+        
+            dropdown.addEventListener("click", function(event) {
+                this.querySelector(".dropdown-content").classList.toggle("show");
+            });
+        });
+    </script>
+
+    <div class="main">
+        <form method="post">
+            <h2>Workout Tips and Plan</h2>
+            <div class="content3">
+                <h4><li><b>CARDIO EXERCISE</b></li></h4>
+                <h4><b>MEN EXERCISE</b></h4>
+                <ol>
+                    <li><b>Squat Jumps</b>
+                        <p>Begin with feet about hip-distance apart and engage the core. Squat as low as possible, touching the floor with your fingertips if you can. Make sure you send the hips back to avoid putting too much pressure on the knees. Jump up as high as you can, sweeping your arms overhead. Land with soft knees back into your squat and repeat for 30 to 60 seconds.</p>
+                    </li>
+                    <li><b>Jumping Jacks</b>
+                        <p>Stand facing a step or platform and jump up onto it with both feet. Jump back down to the floor, or step down if jumping feels unsafe. Perform a jumping jack on the floor and, after you jump the feet back together, jump back onto the step. Continue alternating for 30 to 60 seconds.</p>
+                    </li>
+                    <li><b>Burpees</b>
+                        <p>Stand with feet hip-width apart and squat to the floor, placing your hands on the floor. Jump explosively with your feet out behind you to a push-up position. Do a push-up (optional). Jump the feet back to start, stand up, and repeat for 10 to 15 reps or 30 to 60 seconds.</p>
+                    </li>
+                    <li><b>Mountain Climbers</b>
+                        <p>Begin in a push-up position. Bring your right knee in towards your chest. Switch feet in the air, alternating as fast as you can for 30 to 60 seconds.</p>
+                    </li>
+                    <li><b>Side to Side Jumping Lunges</b>
+                        <p>Take your right leg out to the side, bending your left knee. Jump up, shifting your feet in the air, and lunge to the right. Continue alternating for 30 to 60 seconds.</p>
+                    </li>
+                    <li><b>Jogging in Place</b>
+                        <p>March in place, lifting your knees and swinging your arms. Move into a light jog, keeping your feet close to the ground. Repeat for 30 seconds to as many minutes as you can.</p>
+                    </li>
+                </ol>
+                <br>
+                <h4><b>WOMEN EXERCISE</b></h4>
+                <br><br>
+                <ol>
+                    <li><b>Single Leg Stand</b>
+                        <p>Stand with feet together. Lift one leg 3–6 in off the floor. Hold for 10–15 seconds and switch legs.</p>
+                    </li>
+                    <li><b>Supine Snow Angel</b>
+                        <p>Lie on your back with feet flat. Extend arms from the shoulders and raise them to meet each other. Lower back to start and repeat.</p>
+                    </li>
+                    <li><b>Trunk Rotation</b>
+                        <p>Stand with a heavy object at chest height. Twist from the torso side to side.</p>
+                    </li>
+                    <li><b>Squat to Front Kick</b>
+                        <p>Stand with feet hip-width apart, squat down, and extend one leg to perform a front kick. Repeat on the other side.</p>
+                    </li>
+                    <li><b>Stair Climb</b>
+                        <p>Take the stairs two at a time, increasing speed to a running pace.</p>
+                    </li>
+                    <li><b>Jump Rope</b>
+                        <p>Jump with an air rope, alternating between both feet and one foot.</p>
+                    </li>
+                </ol>
+                <strong>Doing this workout can be done anywhere. Make sure to take a rest every 1 to 2 workouts and stay hydrated. This workout is best for those starting their day with light exercise, older adults, and those looking to lose weight lightly.</strong>
+                <p><strong>Benefits: Cardio exercise strengthens the heart and improves blood flow throughout the body, including the brain, helping protect against vascular dementia.</strong></p>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Find us on social media:</p>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </footer>
+</body>
+</html>

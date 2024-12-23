@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchantress | Wellness</title>
+    <link rel="icon" href="./pictures/Untitled design (18).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./wellnessStyle.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videos/bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="navbar">
+        <div class="website-logo">
+            <a href="3_Website_Homepage.html"><img src="pictures/websitelogo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+            <div class="nav-links">
+                <li><a href="BeautyTips.html">Beauty Tips</a></li>
+                <li><a href="./lipProducts.php" onclick="scrollToTop()">Beauty Products</a></li>
+                <li><a href="Wellness.html" id="selected">Wellness</a></li>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropper">Upper Body Workout<img src="./pictures/down-arrow.png" alt="dropdown" /></a>
+                <div class="dropdown-content">
+                    <a href="./wellnessExercise.html" class="choice-link">Cardio Exercise</a>
+                    <a href="./LowerEx.html" class="choice-link">Lower Body Workout</a>
+                    <a href="./foods.html" class="choice-link">Recommended Healthy Foods to Eat</a>
+                </div>
+            </div>
+            <div class="right-links">
+                <li><a href="About.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+        
+            dropdown.addEventListener("click", function(event) {
+                this.querySelector(".dropdown-content").classList.toggle("show");
+            });
+        });
+    </script>
+
+    <div class="main">
+        <form method="post">
+            <h2>Workout Tips and Plan</h2>
+            <div class="content3">
+                <h4><b>UPPER BODY WORKOUT</b></h4>
+        <h4><b>MEN EXERCISE</b></h4>
+        <ol>
+            <li><b>Chest Press</b>
+                <p>Use free weights on a bench. Lying flat on the bench, grab a pair of dumbbells and push horizontally up to the ceiling.</p>
+            </li>
+            <li><b>Bicep Curls and Hammer Curls</b>
+                <p>Stand facing a mirror. Biceps: Take one dumbbell in each hand, held horizontally. Curl your arm without going all the way to the top. Hammer Curls: Hold weights vertically and bring arms up to shoulders.</p>
+            </li>
+            <li><b>Triceps Kickbacks and Overhead Extensions</b>
+                <p>Use a weight bench and put one knee on it. Lean over with one free weight in hand. Lift your arm and kick back to straighten your arm. Switch sides. For Overhead Extensions, take one heavier weight and hold it with both arms overhead. Start with straight arms, then bend and straighten the weight behind your head.</p>
+            </li>
+            <li><b>Assisted Pull-Up and Dips</b>
+                <p>Use the machine in the weight room. Start with a weight heavier than you are for assistance. As you get stronger, lighten the weight.</p>
+            </li>
+            <li><b>Bent Over Rows</b>
+                <p>Use your free weights on the bench. Put one knee on it and row the weight back up to your side. Switch sides.</p>
+            </li>
+        </ol>
+        <h4><b>WOMEN EXERCISE</b></h4>
+        <ol>
+            <li><b>Resistance Band Pull Apart</b>
+                <p>Stand with your arms out in front of you at chest height. Hold a resistance band tightly between your hands. Keeping both arms straight, pull the band toward your chest by moving your arms outward. Hold briefly, then slowly return to the starting position. Repeat 12 to 15 times for 2 to 3 sets.</p>
+            </li>
+            <li><b>Wall Angels</b>
+                <p>Stand with your back against a wall. Keep your knees slightly bent and stretch your arms above your head with the backs of your hands against the wall. Squeeze your mid-back as you slide your arms down toward your shoulders, then slide back up to the starting position. Repeat 15 to 20 times for 2 to 3 sets.</p>
+            </li>
+            <li><b>Chest Fly</b>
+                <p>30 seconds. Start with your arms up and palms facing each other. Lower your arms out to the sides, keeping elbows slightly bent.</p>
+            </li>
+            <li><b>Pullover</b>
+                <p>30 seconds. Lie down, hold one dumbbell with both hands and press your arms up. Lower the dumbbell over and beyond your head.</p>
+            </li>
+            <li><b>Arm Swings</b>
+                <p>45 seconds. Cross your arms in front and then quickly bring them back as far as you can.</p>
+            </li>
+        </ol>
+        <strong>Do this workout with 3 sets of 6-8 reps. This workout is suitable for those who want to tone and strengthen their upper body.</strong>
+        <p>Benefits: A strong upper body improves range of motion and flexibility, increases muscle mass, and enhances bone density, reducing the risk of diabetes and promoting heart health.</p>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Find us on social media:</p>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </footer>
+</body>
+</html>

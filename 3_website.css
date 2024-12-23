@@ -1,0 +1,125 @@
+body {  
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    background-color: tan;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: rgb(194, 157, 108);
+}
+.logo {
+    padding: 7px;
+    margin-left: 10px;
+}
+.logo img {
+    height: 50px;
+}
+ul {
+    list-style-type: none;
+    font-family: serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links {
+    display: flex;
+}
+.right-links {
+    display: flex;
+}
+li {
+    margin: 0 10px; 
+}
+li a {
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #8d6b42;
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: calc(80vh - 70px);
+}
+h1 {
+    font-family: times new roman;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0.1em 0.1em 0.2em rgba(255, 255, 255, 0.5);
+    animation: glow 3s ease-in-out infinite, grow 6s ease-in-out infinite;
+}
+p {
+    color: #885c27;
+    font-size: 18px;
+}
+@keyframes glow {
+    0% { text-shadow: 0.1em 0.1em 0.2em rgba(255, 255, 255, 0.5); }
+    50% { text-shadow: 0.1em 0.1em 0.5em rgba(255, 255, 255, 1); }
+    100% { text-shadow: 0.1em 0.1em 0.2em rgba(255, 255, 255, 0.5); }
+}
+@keyframes grow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+.website-logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+footer {
+    background-color: tan;
+    padding: 5px;
+    text-align: center;
+    align-self: flex-end;
+    width: 100%;
+    margin: 0;
+}
+footer p {
+    font-size: 16px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+#twitter:hover {
+    transition: .2s;
+    color: rgb(29, 161, 242);
+}
+#facebook:hover {
+    transition: .2s;
+    color: rgb(24, 119, 242);
+}
+#insta:hover {
+    background: linear-gradient(to right, #515bd4, #8134af, #d02a7b);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#bg-video {
+    margin-top: -285px;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background-size: cover;
+}

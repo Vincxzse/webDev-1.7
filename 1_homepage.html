@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enchantress Homepage</title>
+    <link rel="stylesheet" href="1_Homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <img src="pictures\4.jpg" alt="Enchantress Logo" class="header-logo">
+        <h1>ENCHANTRESS</h1>
+    </div>
+    
+    <div class="navbar">
+        <div class="logo">
+            <a href="#top"><img src="pictures\websitelogo.jpg" alt="Logo" class="website-logo"></a>
+        </div>
+        <ul>
+            <div class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Beauty Tips</a>
+                    <div class="dropdown-content">
+                        <a href="./2_login.html"><i class="pimples"></i> How to get rid of pimples</a>
+                        <a href="./2_login.html"><i class="lips"></i> How to take care of your lips</a>
+                        <a href="./2_login.html"><i class="hair"></i> How to take care of your hair</a>
+                        <a href="./2_login.html"><i class="nails"></i> Tips to get strong and healthy nails</a>
+                        <a href="./2_login.html"><i class="underarms"></i> How to brighten up dark underarms</a>
+                        <a href="./2_login.html"><i class="makeup"></i> 13 steps to apply makeup</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Skin Care Products</a>
+                    <div class="dropdown-content">
+                        <a href="./2_login.html">Face</a>
+                        <a href="./2_login.html">Hair</a>
+                        <a href="./2_login.html">Underarm</a>
+                        <a href="./2_login.html">Lips</a>
+                        <a href="./2_login.html">Makeup</a>
+                        <a href="./2_login.html">Skin</a>
+                    </div>
+                </li>
+            </div>
+            <div class="right-links">
+                <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="register.html"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+            </div>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <div class="column left-column">
+            <img src="pictures\pic1.jpg">
+        </div>
+        <div class="column right-column">
+            <h2>Welcome to Enchantress</h2>
+            <p><b>Your Ultimate Destination for Beauty Tips, Top-Notch Products, and Wellness Guidance. 
+                Discover the Secrets to Radiant Skin, Lustrous Hair, and a Healthy Lifestyle. 
+                Embrace Your Inner and Outer Beauty with Confidence and Style.</b></p>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <hr class="solid">
+    <section class="sec1">
+        <h2>EMBRACE THE</h2>
+        <h3>MAGIC</h3><br><br><br>
+        <p>Discover the magic of beauty, wellness, and style with Enchantress.</p>
+        <p>We believe in enchanting every aspect of your life—nurturing your skin, cherishing the planet, and uplifting people.</p>
+        <p>Embrace a lifestyle where beauty meets kindness and wellness, and be inspired to live your most radiant, confident self.</p>
+    </section>
+    <section>
+        <div class="row">
+            <div class="column">
+                <h3>BEAUTY</h3>
+                <img src="pictures\beauty.jpg" alt="Beauty" onclick="showDefinition('beautyDefinition')">
+                <div id="beautyDefinition" class="definition"><strong>Beauty</strong> is the quality that gives pleasure to the senses, especially sight.
+                    It encompasses both physical appearance and inner qualities, reflecting confidence, health, and self-care. 
+                    At Enchantress, we believe beauty is about embracing your unique features and enhancing them through mindful practices, skincare, and makeup that highlight your natural glow.</div>
+            </div>
+            <div class="column">
+                <h3>WELLNESS</h3>
+                <img src="pictures\wellness.jpg" alt="Wellness" onclick="showDefinition('wellnessDefinition')">
+                <div id="wellnessDefinition" class="definition"><strong>Wellness</strong> is a holistic approach to health that encompasses physical, mental, and emotional well-being. 
+                    It involves nurturing your body with nutritious food, regular exercise, and mindfulness practices that foster inner peace and balance. 
+                    At Enchantress, we promote wellness as the foundation for a vibrant, fulfilling life, encouraging routines that support overall health and happiness.</div>
+            </div>
+            <div class="column">
+                <h3>STYLE</h3>
+                <img src="pictures\style.jpg" alt="Style" onclick="showDefinition('styleDefinition')">
+                <div id="styleDefinition" class="definition"><strong>Style</strong> is the expression of individuality through fashion and personal presentation. 
+                    It’s about choosing clothing and accessories that reflect your personality and make you feel confident. 
+                    At Enchantress, we celebrate style as a form of self-expression, offering the latest trends and timeless pieces that help you create a look that is uniquely yours.
+                    These definitions can help clarify the core values of your brand and connect with your audience on a deeper level.</div>
+            </div>
+        </div>
+        <br><br><br><br><br> 
+    </section>
+    
+    <script>
+        function showDefinition(definitionId) {
+            var definition = document.getElementById(definitionId);
+            if (definition.style.display === "none") {
+                definition.style.display = "block";
+            } else {
+                definition.style.display = "none";
+            }
+        }
+    </script>
+    
+    <footer>
+        <p>Find us on social media: <br>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        </p>
+    </footer>
+</body>
+</html>

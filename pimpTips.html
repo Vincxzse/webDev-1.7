@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchantress | Tips</title>
+    <link rel="icon" href="./pictures/Untitled design (18).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./pimpTips.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videos/bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="navbar">
+        <div class="website-logo">
+            <a href="3_Website_Homepage.html"><img src="pictures/websitelogo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+            <div class="nav-links">
+                <li><a href="BeautyTips.html" id="selected">Beauty Tips</a></li>
+                <li><a href="./lipProducts.php" onclick="scrollToTop()">Skin Care Products</a></li>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropper">How to get rid of Pimples<img src="./pictures/down-arrow.png" alt="dropdown" /></a>
+                <div class="dropdown-content">
+                    <a href="./hairTips.html" class="choice-link">How to take care of your Hair</a>
+                    <a href="./lipTips.html" class="choice-link">How to take care of your Lips</a>
+                    <a href="./nailTips.html" class="choice-link">How to get Strong and Healthy Nails</a>
+                    <a href="./underarmTips.html" class="choice-link">How to Brighten Up Dark Underarms</a>
+                    <a href="./makeupTips.html" class="choice-link">13 Steps to Apply Make-up</a>
+                </div>
+            </div>
+            <div class="right-links">
+                <li><a href="About.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+        
+            dropdown.addEventListener("click", function(event) {
+                this.querySelector(".dropdown-content").classList.toggle("show");
+            });
+        });
+    </script>
+
+    <div class="main">
+        <form method="post">
+            <h2>How to Get Rid of Pimples</h2>
+            <p>Your skin has tiny holes called pores that can become blocked by oil, bacteria, dead skin cells, and dirt. When this occurs, you may develop a pimple, sometimes also called a zit or blemish. If you get pimples often, especially several at once repeatedly, you may have acne.</p>
+
+            <div class="content3">
+                <h3>Do's</h3>
+                <ol>
+                    <li><b>Do ice the pimple.</b><p>Applying ice directly to the blemish will help reduce inflammation. Wrap an ice cube in a thin cloth and set it on the spot for three to four minutes.</p><img class="img" src="pictures/tip22.jpg" alt="Ice on Pimple"></li>
+                    <li><b>Do use an acne-fighting cleanser.</b><p>Look for a cleanser with salicylic acid to keep pores clear.</p><img class="img" src="pictures/tip23.jpg" alt="Acne Cleanser"></li>
+                    <li><b>Do use spot treatment.</b><p>Salicylic acid spot treatments can help target inflamed areas.</p><img class="img" src="pictures/tip24.jpg" alt="Spot Treatment"></li>
+                    <li><b>Do change your pillowcase.</b><p>Swap pillowcases weekly to reduce bacteria buildup.</p><img class="img" src="pictures/tip25.jpg" alt="Pillowcase"></li>
+                </ol>
+                
+                <h3>Don'ts</h3>
+                <ol>
+                    <li><b>Don’t pick your face.</b><p>Picking can lead to inflammation and scarring.</p><img class="img" src="pictures/tip26.jpg" alt="Avoid Picking Face"></li>
+                    <li><b>Don’t overdry the affected area.</b><p>Excessive use of exfoliants can irritate the skin.</p><img class="img" src="pictures/tip27.jpg" alt="Avoid Overdrying"></li>
+                    <li><b>Don’t wear pore-clogging makeup.</b><p>Avoid makeup with mineral oil or lanolin.</p><img class="img" src="pictures/tip28.jpg" alt="Pore-clogging Makeup"></li>
+                </ol>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Find us on social media:</p>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </footer>
+</body>
+</html>

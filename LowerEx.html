@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchantress | Wellness</title>
+    <link rel="icon" href="./pictures/Untitled design (18).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./wellnessStyle.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videos/bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="navbar">
+        <div class="website-logo">
+            <a href="3_Website_Homepage.html"><img src="pictures/websitelogo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+            <div class="nav-links">
+                <li><a href="BeautyTips.html">Beauty Tips</a></li>
+                <li><a href="./lipProducts.php" onclick="scrollToTop()">Beauty Products</a></li>
+                <li><a href="Wellness.html" id="selected">Wellness</a></li>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropper">Lower Body Workout<img src="./pictures/down-arrow.png" alt="dropdown" /></a>
+                <div class="dropdown-content">
+                    <a href="./wellnessExercise.html" class="choice-link">Cardio Exercise</a>
+                    <a href="./upperEx.html" class="choice-link">Upper Body Workout</a>
+                    <a href="./foods.html" class="choice-link">Recommended Healthy Foods to Eat</a>
+                </div>
+            </div>
+            <div class="right-links">
+                <li><a href="About.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+        
+            dropdown.addEventListener("click", function(event) {
+                this.querySelector(".dropdown-content").classList.toggle("show");
+            });
+        });
+    </script>
+
+    <div class="main">
+        <form method="post">
+            <h2>Workout Tips and Plan</h2>
+            <div class="content3">
+                <h4><b>LOWER BODY WORKOUTS</b></h4>
+        <h4><b>MEN EXERCISE</b></h4>
+        <ol>
+            <li><b>Romanian Deadlift</b>
+                <p>Stand with feet hip-width apart, knees slightly bent. Hold a dumbbell in each hand at your thighs. Hinge at your hips and push your butt back, keeping your back flat. Your torso should be almost parallel to the floor, and the weights should reach your shins. Push through your heels to stand up straight. Pause at the top and squeeze your glutes.</p>
+            </li>
+            <li><b>Goblet Squat</b>
+                <p>Stand with feet wider than hip-width apart, holding a dumbbell in front of you. Engage your core and squat down by shifting your weight into your heels. Drive through your heels to stand and squeeze your glutes at the top.</p>
+            </li>
+            <li><b>Glute Bridge</b>
+                <p>Lie on your back with knees bent and feet flat on the floor, with a dumbbell resting on your hips. Push through your heels to lift your hips while squeezing your glutes. Pause, then lower back down.</p>
+            </li>
+            <li><b>Reverse Lunge</b>
+                <p>Stand with feet shoulder-width apart. Step back with your right foot, landing on the ball of your foot, and lower into a lunge. Push through the heel of your left foot to return to starting position.</p>
+            </li>
+            <li><b>Lateral Monster Walk</b>
+                <p>Stand with feet hip-width apart and knees bent. Step to the right with your right foot, then bring the left in, but not all the way. Keep your hips down in a quarter-squat position.</p>
+            </li>
+        </ol>
+        <h4><b>WOMEN EXERCISE</b></h4>
+        <ol>
+            <li><b>Hip Circles</b>
+                <p>Support yourself on elbows and knees. Make circles in the air with one knee, moving from the hip. Continue for 30 seconds, then switch legs.</p>
+            </li>
+            <li><b>Walking Lunges</b>
+                <p>Stand with hands on hips. Step forward with right leg and lower into a lunge. Press through the right foot and step forward again with the left leg.</p>
+            </li>
+            <li><b>Side Lying Plank</b>
+                <p>Lie on your side, prop up on your elbow, and lift your hips off the ground, keeping your body in a straight line.</p>
+            </li>
+            <li><b>Broad Jump</b>
+                <p>Stand with feet hip-width apart. Bend at the hips and launch your body forward in a controlled jump. Land on your feet.</p>
+            </li>
+            <li><b>Banded Lateral Walk</b>
+                <p>Place a mini resistance band above your ankles. Stand with feet hip-width apart and step left, followed by right.</p>
+            </li>
+        </ol>
+        <strong>Aim for 8–12 reps of each exercise, resting 30 seconds between exercises and 1–2 minutes after each round. Complete 2–5 rounds total. This workout is suitable for those who want to strengthen their lower body.</strong>
+        <p>Benefits: Lower body workouts help with weight control, digestion, gut health, and hormone regulation. They improve muscle and bone health, brain function, and cardiovascular fitness.</p>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Find us on social media:</p>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </footer>
+</body>
+</html>

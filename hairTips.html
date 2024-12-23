@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchantress | Tips</title>
+    <link rel="icon" href="./pictures/Untitled design (18).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./pimpTips.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videos/bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="navbar">
+        <div class="website-logo">
+            <a href="3_Website_Homepage.html"><img src="pictures/websitelogo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+            <div class="nav-links">
+                <li><a href="BeautyTips.html" id="selected">Beauty Tips</a></li>
+                <li><a href="./lipProducts.php" onclick="scrollToTop()">Skin Care Products</a></li>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropper">How to take care of your Hair<img src="./pictures/down-arrow.png" alt="dropdown" /></a>
+                <div class="dropdown-content">
+                    <a href="./pimpTips.html" class="choice-link">How to get rid of Pimples</a>
+                    <a href="./lipTips.html" class="choice-link">How to take care of your Lips</a>
+                    <a href="./nailTips.html" class="choice-link">How to get Strong and Healthy Nails</a>
+                    <a href="./underarmTips.html" class="choice-link">How to Brighten Up Dark Underarms</a>
+                    <a href="./makeupTips.html" class="choice-link">13 Steps to Apply Make-up</a>
+                </div>
+            </div>
+            <div class="right-links">
+                <li><a href="About.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+        
+            dropdown.addEventListener("click", function(event) {
+                this.querySelector(".dropdown-content").classList.toggle("show");
+            });
+        });
+    </script>
+
+    <div class="main">
+        <form method="post">
+            <h2>How to Take Care of Your Hair</h2>
+            <p>Maintaining your hair is easy once you know how to care for it. Hair is made of protein, so a healthy diet and good hygiene are essential.</p>
+            <div class="content3">
+                <ol>
+                    <li>
+                        <b>Washing your hair</b><p>Wash hair sparingly with quality shampoo. Aim to shampoo every other day or twice a week.</p><img class="img" src="pictures/tip1.jpg" alt="Washing Hair">
+                    </li>
+                    <li>
+                        <b>Use shampoos that do not contain sulfates or parabens.</b>
+                        <p>Sulfates are chemicals that make shampoos lather up, while parabens are preservatives that can cause irritation and eye problems after prolonged use. Both are unhealthy for you and the environment, so opt for shampoos with natural cleansers suited to your hair type. Straight or oily hair may require a gentle shampoo designed for daily use, while colored or treated hair benefits from shampoos fortified with extracts or amino acids. Dry hair typically needs shampoos with glycerin and collagen to restore moisture.</p>
+                        <img class="img" src="pictures/tip2.gif" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Be careful about using hair care products with too much protein.</b>
+                        <p>Excessive protein can leave your hair feeling desiccated and brittle. While protein is essential for healthy hair, use conditioners with balanced ingredients.</p>
+                        <img class="img" src="pictures/tip20.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Rinse your hair with apple cider vinegar once a month.</b>
+                        <p>This helps make your hair shinier and cleaner and treats dandruff. Use 1 part apple cider vinegar to 3 parts warm water, rinse, and wash your hair as normal. The vinegar smell will dissipate after shampooing.</p>
+                        <img class="img" src="pictures/tip3.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Use conditioner that matches your hair type, length, and treatment damage.</b>
+                        <p>Condition every time you shampoo, especially if you have processed or dyed hair. Deep condition weekly. For afro-textured hair, deep condition every wash. Use store-bought or homemade solutions; deep conditioning keeps hair soft, healthy, and moisturized. Rinse after 15-30 minutes.</p>
+                        <img class="img" src="pictures/tip4.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Moisturize your hair.</b>
+                        <p>Mix equal proportions of almond, castor, olive, coconut, and lavender oils or use egg oil. Apply to hair and leave for four hours before showering. Repeat twice a week.</p>
+                        <img class="img" src="pictures/tip5.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Comb out tangles using a wide-toothed comb before drying.</b>
+                        <p>Wet hair is fragile, so avoid brushing. Spritz with leave-in conditioner and detangle with a wide-toothed comb or your fingers, starting from the ends. For afro-textured hair, dampen with conditioner before detangling in small sections.</p>
+                        <img class="img" src="pictures/tip6.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Use a T-shirt or microfiber towel instead of a regular towel to dry hair.</b>
+                        <p>Wrap your hair in a cotton T-shirt after showering. Towels can damage hair, causing frizz and split ends. A microfiber towel is gentler and can double as a wrap.</p>
+                        <img class="img" src="pictures/tip7.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Let hair dry naturally when you can.</b>
+                        <p>Air drying is the healthiest option, though it may take time. Avoid blow-dryers unless necessary, as heat can damage hair. If you shower before bed, put your hair in a bun to air-dry overnight.</p>
+                        <img class="img" src="pictures/tip8.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Blow dry your hair on the warm setting for quick results.</b>
+                        <p>If styling requires heat, use the warm setting instead of hot to minimize damage. Always use a heat protectant before blow-drying.</p>
+                        <img class="img" src="pictures/tip9.jpg" alt="Ice on Pimple">
+                    </li>
+                </ol>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Find us on social media:</p>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </footer>
+</body>
+</html>

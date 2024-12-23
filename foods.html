@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchantress | Wellness</title>
+    <link rel="icon" href="./pictures/Untitled design (18).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./wellnessStyle.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videos/bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="navbar">
+        <div class="website-logo">
+            <a href="3_Website_Homepage.html"><img src="pictures/websitelogo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+            <div class="nav-links">
+                <li><a href="BeautyTips.html">Beauty Tips</a></li>
+                <li><a href="./lipProducts.php" onclick="scrollToTop()">Beauty Products</a></li>
+                <li><a href="Wellness.html" id="selected">Wellness</a></li>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropper">Recommended Healthy Foods to Eat<img src="./pictures/down-arrow.png" alt="dropdown" /></a>
+                <div class="dropdown-content">
+                    <a href="./wellnessExercise.html" class="choice-link">Cardio Exercise</a>
+                    <a href="./upperEx.html" class="choice-link">Upper Body Workout</a>
+                    <a href="./LowerEx.html" class="choice-link">Lower Body Workout</a>
+                </div>
+            </div>
+            <div class="right-links">
+                <li><a href="About.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+        
+            dropdown.addEventListener("click", function(event) {
+                this.querySelector(".dropdown-content").classList.toggle("show");
+            });
+        });
+    </script>
+
+    <div class="main">
+        <form method="post">
+            <h2>HEALTHY LIFESTYLE</h2>
+            <div class="content3">
+                <h3>RECOMMENDED HEALTHY FOODS TO EAT</h3>
+        <p>Eating a wide variety of nutritious foods, including fruit, vegetables, nuts, seeds, and lean protein, supports overall health. Fill your plate with colorful, versatile meals that are good for you.</p>
+        <h3>Fruits and Berries</h3>
+        <p>Fruits and berries are nutritious and easy to incorporate into your diet.</p>
+        <ol>
+            <li>
+                <h4>Apples</h4>
+                <img src="pictures/pic55.jpg" width="300" height="200">
+                <p>Apples contain fiber, vitamin C, and antioxidants. They are filling and make a great snack.</p>
+            </li>
+            <li>
+                <h4>Avocados</h4>
+                <img src="pictures/pic56.jpg" width="300" height="200">
+                <p>Avocados are high in healthy fat, fiber, potassium, and vitamin C. Use them as a salad dressing or spread on toast.</p>
+            </li>
+            <li>
+                <h4>Blueberries</h4>
+                <img src="pictures/pic57.jpg" width="300" height="200">
+                <p>Blueberries are delicious and high in antioxidants.</p>
+            </li>
+            <li>
+                <h4>Strawberries</h4>
+                <img src="pictures/pic58.jpg" width="300" height="200">
+                <p>Strawberries are nutritious and low in carbs and calories, providing vitamin C, fiber, and manganese.</p>
+            </li>
+            <li>
+                <h4>Bananas</h4>
+                <img src="pictures/pic59.jpg" width="300" height="200">
+                <p>Bananas are high in potassium and contain good fiber. They're great in smoothies and oatmeal.</p>
+            </li>
+        </ol>
+        <h3>Vegetables</h3>
+        <p>Vegetables are the foundation of a nutritious diet. They are high in vitamins and minerals and can be eaten raw or cooked.</p>
+        <ol>
+            <li>
+                <h4>Spinach</h4>
+                <img src="pictures/pic60.jpg" width="300" height="200">
+                <p>Spinach is nutrient-rich and low in calories. It's versatile and can be used in salads, smoothies, or cooked dishes.</p>
+            </li>
+            <li>
+                <h4>Broccoli</h4>
+                <img src="pictures/pic61.jpg" width="300" height="200">
+                <p>Broccoli is a cruciferous vegetable packed with vitamins K and C. It can be steamed, roasted, or eaten raw.</p>
+            </li>
+            <li>
+                <h4>Bell Peppers</h4>
+                <img src="pictures/pic62.jpg" width="300" height="200">
+                <p>Bell peppers are rich in vitamins A and C and can add flavor to various dishes.</p>
+            </li>
+            <li>
+                <h4>Carrots</h4>
+                <img src="pictures/pic63.jpg" width="300" height="200">
+                <p>Carrots are crunchy and sweet, high in beta carotene and fiber.</p>
+            </li>
+            <li>
+                <h4>Kale</h4>
+                <img src="pictures/pic64.jpg" width="300" height="200">
+                <p>Kale is a leafy green vegetable rich in vitamins and minerals. It's great in salads or cooked dishes.</p>
+            </li>
+        </ol>
+        <h3>Nuts and Seeds</h3>
+        <p>Nuts and seeds are nutrient-dense and provide healthy fats, protein, and fiber.</p>
+        <ol>
+            <li>
+                <h4>Almonds</h4>
+                <img src="pictures/pic65.jpg" width="300" height="200">
+                <p>Almonds are high in vitamin E and magnesium. They're a great snack and can be added to various dishes.</p>
+            </li>
+            <li>
+                <h4>Chia Seeds</h4>
+                <img src="pictures/pic66.jpg" width="300" height="200">
+                <p>Chia seeds are rich in omega-3 fatty acids, fiber, and protein. They can be added to smoothies or oatmeal.</p>
+            </li>
+            <li>
+                <h4>Walnuts</h4>
+                <img src="pictures/pic67.jpg" width="300" height="200">
+                <p>Walnuts are high in antioxidants and healthy fats. They're great for snacking or in salads.</p>
+            </li>
+            <li>
+                <h4>Flaxseeds</h4>
+                <img src="pictures/pic68.jpg" width="300" height="200">
+                <p>Flaxseeds are rich in omega-3s and fiber. They can be added to smoothies or baked goods.</p>
+            </li>
+            <li>
+                <h4>Pumpkin Seeds</h4>
+                <img src="pictures/pic69.jpg" width="300" height="200">
+                <p>Pumpkin seeds are high in magnesium and zinc. They make a great snack or salad topping.</p>
+            </li>
+        </ol>
+        <h3>Lean Protein</h3>
+        <p>Lean protein sources are essential for muscle repair and growth. Consider adding these to your diet.</p>
+        <ol>
+            <li>
+                <h4>Chicken Breast</h4>
+                <img src="pictures/pic70.jpg" width="300" height="200">
+                <p>Chicken breast is a low-fat protein source. It's versatile and can be grilled, baked, or stir-fried.</p>
+            </li>
+            <li>
+                <h4>Turkey</h4>
+                <img src="pictures/pic71.jpg" width="300" height="200">
+                <p>Turkey is a great source of lean protein and can be used in various recipes.</p>
+            </li>
+            <li>
+                <h4>Fish</h4>
+                <img src="pictures/pic72.jpg" width="300" height="200">
+                <p>Fish like salmon are high in omega-3 fatty acids and protein. They can be baked, grilled, or poached.</p>
+            </li>
+            <li>
+                <h4>Eggs</h4>
+                <img src="pictures/pic73.jpg" width="300" height="200">
+                <p>Eggs are a nutrient-rich protein source. They can be boiled, scrambled, or used in various dishes.</p>
+            </li>
+            <li>
+                <h4>Greek Yogurt</h4>
+                <img src="pictures/pic74.jpg" width="300" height="200">
+                <p>Greek yogurt is high in protein and probiotics. It's great for breakfast or as a snack.</p>
+            </li>
+        </ol>
+        <p>By incorporating a variety of these foods into your diet, you can support your overall health and wellness.</p>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Find us on social media:</p>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchantress | Tips</title>
+    <link rel="icon" href="./pictures/Untitled design (18).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./pimpTips.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videos/bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="navbar">
+        <div class="website-logo">
+            <a href="3_Website_Homepage.html"><img src="pictures/websitelogo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+            <div class="nav-links">
+                <li><a href="BeautyTips.html" id="selected">Beauty Tips</a></li>
+                <li><a href="./lipProducts.php" onclick="scrollToTop()">Skin Care Products</a></li>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropper">13 Steps to Apply Make-up<img src="./pictures/down-arrow.png" alt="dropdown" /></a>
+                <div class="dropdown-content">
+                    <a href="./pimpTips.html" class="choice-link">How to get rid of Pimples</a>
+                    <a href="./hairTips.html" class="choice-link">How to take care of your Hair</a>
+                    <a href="./lipTips.html" class="choice-link">How to take care of your Lips</a>
+                    <a href="./nailTips.html" class="choice-link">How to get Strong and Healthy Nails</a>
+                    <a href="./underarmTips.html" class="choice-link">How to Brighten Up Dark Underarms</a>
+                </div>
+            </div>
+            <div class="right-links">
+                <li><a href="About.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+        
+            dropdown.addEventListener("click", function(event) {
+                this.querySelector(".dropdown-content").classList.toggle("show");
+            });
+        });
+    </script>
+
+    <div class="main">
+        <form method="post">
+            <h2>13 Steps To Apply Makeup</h2>
+            <div class="content3">
+                <ol>
+                    <li>
+                        <b>Moisturizer</b>
+                        <p>Use the right moisturizer for your skin type before applying makeup.</p>
+                        <img class="img" src="pictures/tip40.jpg">
+                    </li>
+                    <li>
+                        <b>Primer</b>
+                        <p>Apply primer to smooth out skin texture and help makeup last longer.</p>
+                        <img class="img" src="pictures/tip45.jpg">
+                    </li>
+                    <li>
+                        <b>Liquid Foundation</b>
+                        <p>Pick a shade matching your skin and apply it from the center of your face outwards.</p>
+                        <img class="img" src="pictures/tip46.jpg">
+                    </li>
+                    <li>
+                        <b>Concealer</b>
+                        <p>Use two concealers: one matching your skin tone for blemishes, and one lighter for highlights.</p>
+                        <img class="img" src="pictures/tip47.jpg">
+                    </li>
+                    <li>
+                        <b>FOUNDATION POWDER</b>
+                        <p>Applying foundation powder can be tricky; too little is ineffective, too much creates a "cake look". Use these tips for a flawless complexion.</p>
+                        <p>Start by dusting a light coat using a fluffy brush. For areas needing more coverage, press the brush firmly into the skin.</p>
+                        <img class="img" src="pictures/tip48.jpg">
+                    </li>
+                    <li>
+                        <b>BRONZER</b>
+                        <p>To get a sun-kissed glow, apply bronzer with a dense brush. Choose a shade no more than two shades darker than your skin.</p>
+                        <img class="img" src="pictures/tip49.jpg">
+                        <p><b>How to Apply Bronzer</b>: Start at your forehead, sweep along your cheeks, and down your jawline, forming a "3".</p>
+                    </li>
+                    <li>
+                        <b>BRONZER</b>
+                        <p>To get a sun-kissed glow, apply bronzer with a dense brush. Choose a shade no more than two shades darker than your skin.</p>
+                        <img class="img" src="pictures/tip49.jpg">
+                        <p><b>How to Apply Bronzer</b>: Start at your forehead, sweep along your cheeks, and down your jawline, forming a "3".</p>
+                    </li>
+                    <li>
+                        <b>HIGHLIGHTER</b>
+                        <p>Highlight key areas: nose bridge, cheekbones, eyelids, brow bone, Cupid's Bow, forehead, chin. Use liquid, cream, or powder.</p>
+                        <img class="img" src="pictures/tip51.jpg">
+                    </li>
+                    <li>
+                        <b>EYESHADOW</b>
+                        <p>Use two shades: lighter across the lid, darker in the outer corners. Blend for a natural look.</p>
+                        <img class="img" src="pictures/tip52.jpg">
+                    </li>
+                    <li>
+                        <b>EYELINER</b>
+                        <p>Types: Liquid for precision, gel for cat-eye, pencil for smoky. Apply close to the lash line.</p>
+                        <img class="img" src="pictures/tip53.jpg">
+                    </li>
+                    <li>
+                        <b>MASCARA</b>
+                        <p>Curl lashes before applying. Wriggle the brush at the roots, then pull through. Use a clean brush if clumps appear.</p>
+                        <img class="img" src="pictures/tip54.jpg">
+                    </li>
+                    <li>
+                        <b>LIP GLOSS</b>
+                        <p>Prep lips with a scrub and balm. Apply gloss from the center, avoiding the edges of your lips.</p>
+                        <img class="img" src="pictures/tip55.jpg">
+                    </li>
+                    <li>
+                        <b>SETTING SPRAY & POWDER</b>
+                        <p>Apply setting spray in an X and T pattern to lock in makeup.</p>
+                        <div class="img-container">
+                            <img class="img" src="pictures/tip56.jpg">
+                            <img class="img" src="pictures/tip57.jpg">
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Find us on social media:</p>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </footer>
+</body>
+</html>

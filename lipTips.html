@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchantress | Tips</title>
+    <link rel="icon" href="./pictures/Untitled design (18).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./pimpTips.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videos/bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="navbar">
+        <div class="website-logo">
+            <a href="3_Website_Homepage.html"><img src="pictures/websitelogo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+            <div class="nav-links">
+                <li><a href="BeautyTips.html" id="selected">Beauty Tips</a></li>
+                <li><a href="./lipProducts.php" onclick="scrollToTop()">Skin Care Products</a></li>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropper">How to take care of your Lips<img src="./pictures/down-arrow.png" alt="dropdown" /></a>
+                <div class="dropdown-content">
+                    <a href="./pimpTips.html" class="choice-link">How to get rid of Pimples</a>
+                    <a href="./hairTips.html" class="choice-link">How to take care of your Hair</a>
+                    <a href="./nailTips.html" class="choice-link">How to get Strong and Healthy Nails</a>
+                    <a href="./underarmTips.html" class="choice-link">How to Brighten Up Dark Underarms</a>
+                    <a href="./makeupTips.html" class="choice-link">13 Steps to Apply Make-up</a>
+                </div>
+            </div>
+            <div class="right-links">
+                <li><a href="About.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+        
+            dropdown.addEventListener("click", function(event) {
+                this.querySelector(".dropdown-content").classList.toggle("show");
+            });
+        });
+    </script>
+
+    <div class="main">
+        <form method="post">
+            <h2>How to Take Care of Your Lips</h2>
+            <p>Your lips are essential for talking, kissing, and eating. Dealing with dry, cracked, or irritated lips can be frustrating. Here are some tips for smoother, healthier lips.</p>
+            <h3>10 Steps to Avoid Dark, Dull, and Dry Lips:</h3>
+            <div class="content3">
+                <ol>
+                    <li>
+                        <b>Exfoliate once a week</b>
+                        <p>Exfoliating removes dead skin, leaving lips smooth. Use a lip scrub, toothbrush, or washcloth. Make a scrub with 1 tbsp honey, 1 tsp olive oil, and 1 tbsp sugar. Don’t over-exfoliate to avoid irritation.</p>
+                        <img class="img" src="pictures/pic92.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Protect your lips with lip balm</b>
+                        <p>Lock in moisture and shield against UV rays with an ointment-based lip balm with SPF 15. Reapply every 2 hours, especially in cold weather.</p>
+                        <img class="img" src="pictures/tip11.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Try not to lick your lips</b>
+                        <p>Licking can dry them out more. Use lip balm instead; saliva evaporates and takes moisture with it.</p>
+                        <img class="img" src="pictures/tip12.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Drink plenty of water to stay hydrated</b>
+                        <p>Hydration benefits both inside and out. Aim for 8 glasses of water daily, avoiding dehydrating liquids.</p>
+                        <img class="img" src="pictures/tip13.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Look for lip products that moisturize and hydrate</b>
+                        <p>Choose products with ingredients like castor seed oil, ceramides, and shea butter to protect lips.</p>
+                        <img class="img" src="pictures/tip14.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Stay away from lip products with fragrances or dyes</b>
+                        <p>Harsh chemicals can irritate lips. Opt for natural, fragrance-free products.</p>
+                        <img class="img" src="pictures/tip15.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Breathe through your nose</b>
+                        <p>Mouth breathing can dry out lips. Breathe through your nose when possible, and hydrate your lips.</p>
+                        <img class="img" src="pictures/tip16.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Keep metallic items away from your lips</b>
+                        <p>Metal can irritate sensitive lips. Avoid jewelry and metallic objects near your mouth.</p>
+                        <img class="img" src="pictures/tip17.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Put a humidifier in your room</b>
+                        <p>Dry air can irritate lips. A humidifier keeps lips moisturized, especially in dry climates.</p>
+                        <img class="img" src="pictures/tip19.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Stop using tobacco products</b>
+                        <p>Tobacco increases the risk of lip cancer and contributes to oral health issues.</p>
+                        <img class="img" src="pictures/tip18.jpg" alt="Ice on Pimple">
+                    </li>
+                </ol>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Find us on social media:</p>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </footer>
+</body>
+</html>

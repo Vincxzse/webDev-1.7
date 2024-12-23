@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wellness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="wellness.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videos/bgvid.mp4" type="video/mp4">
+    </video>
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="3_Website_Homepage.html">
+                <img src="pictures/websitelogo.jpg" alt="Logo" class="website-logo">
+            </a>
+        </div>
+        <ul>
+            <div class="nav-links">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn" onclick="window.location.href='BeautyTips.html'">Beauty Tips</a>
+                </li>
+                <li class="dropdown">
+              <a href="lipProducts.html" class="dropbtn" onclick="window.location.href='lipProducts.php'">Beauty Products</a>
+
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#" id="selected" onclick="scrollToTop()">Wellness</a>
+                </li>
+            </div>
+            <div class="right-links">
+                <li><a href="About.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+    <div id="intro">
+        <div class="intro-container">
+            <h1>WELLNESS</h1>
+            <p>Wellness is crucial for it encompasses physical, mental, and emotional health, allowing us to live fulfilling and balanced lives. Prioritizing wellness helps prevent chronic diseases, reduces stress, and enhances overall quality of life by boosting energy, mood, and resilience. It supports better productivity, stronger relationships, and a deeper sense of purpose, enabling us to navigate life’s challenges more effectively. By actively investing in wellness, we cultivate a foundation for long-term health and happiness.</p>
+            <h1>Choose a Topic:</h1>
+            <div class="locator">
+                <a href="./wellnessExercise.html">Cardio Exercise</a>
+                <a href="./upperEx.html">Upper Body Workout</a>
+                <a href="./LowerEx.html">Lower Body Workout</a>
+                <a href="./foods.html">Recommended Healthy Foods to Eat</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <p>Find us on social media:</p>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </footer>
+    </body>
+    </html>

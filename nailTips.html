@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchantress | Tips</title>
+    <link rel="icon" href="./pictures/Untitled design (18).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./pimpTips.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videos/bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="navbar">
+        <div class="website-logo">
+            <a href="3_Website_Homepage.html"><img src="pictures/websitelogo.jpg" alt="Logo"></a>
+        </div>
+        <ul>
+            <div class="nav-links">
+                <li><a href="BeautyTips.html" id="selected">Beauty Tips</a></li>
+                <li><a href="./lipProducts.php" onclick="scrollToTop()">Skin Care Products</a></li>
+            </div>
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropper">How to get Strong and Healthy Nails<img src="./pictures/down-arrow.png" alt="dropdown" /></a>
+                <div class="dropdown-content">
+                    <a href="./pimpTips.html" class="choice-link">How to get rid of Pimples</a>
+                    <a href="./hairTips.html" class="choice-link">How to take care of your Hair</a>
+                    <a href="./lipTips.html" class="choice-link">How to take care of your Lips</a>
+                    <a href="./underarmTips.html" class="choice-link">How to Brighten Up Dark Underarms</a>
+                    <a href="./makeupTips.html" class="choice-link">13 Steps to Apply Make-up</a>
+                </div>
+            </div>
+            <div class="right-links">
+                <li><a href="About.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdown = document.querySelector(".dropdown");
+        
+            dropdown.addEventListener("click", function(event) {
+                this.querySelector(".dropdown-content").classList.toggle("show");
+            });
+        });
+    </script>
+
+    <div class="main">
+        <form method="post">
+            <h2>Tips to Get Strong and Healthy Nails</h2>
+            <p>Well-groomed nails enhance your appearance and can make hands look youthful.</p>
+            <div class="content3">
+                <ol>
+                    <li>
+                        <b>Keep your hands clean</b>
+                        <p>Wash hands thoroughly, removing polish with acetone-free remover. Use a toothbrush and soap to scrub nails and surrounding skin gently.</p>
+                        <img class="img" src="pictures/tip29.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Be gentle on your nails</b>
+                        <p>Avoid metal tools under nails to prevent separation. Use gloves for cleaning or washing dishes.</p>
+                        <img class="img" src="pictures/tip30.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Clip your nails regularly</b>
+                        <p>Trim nails every two weeks to reduce snags and breakage.</p>
+                        <img class="img" src="pictures/tip31.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Prioritize nail health over length</b>
+                        <p>Keep nails short to avoid breakage, especially if you struggle with hangnails.</p>
+                        <img class="img" src="pictures/tip32.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Always keep a nail file on hand</b>
+                        <p>Keep a nail file handy for on-the-spot buffing of rough edges, working in one direction.</p>
+                        <img class="img" src="pictures/tip33.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Wear gloves when cleaning</b>
+                        <p>Household cleaners can weaken nails. Wear gloves for protection.</p>
+                        <img class="img" src="pictures/tip34.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Moisturize your hands</b>
+                        <p>Apply lotion daily, especially after washing hands.</p>
+                        <img class="img" src="pictures/tip35.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Take a biotin supplement</b>
+                        <p>Biotin improves nail strength and health. Consult a healthcare professional before starting any supplement.</p>
+                        <img class="img" src="pictures/tip36.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Consider a manicure</b>
+                        <p>Regular manicures keep nails tidy. Visit a nail technician for nail care.</p>
+                        <img class="img" src="pictures/tip37.jpg" alt="Ice on Pimple">
+                    </li>
+                    <li>
+                        <b>Avoid excessive nail polish</b>
+                        <p>Limit polish use to let nails breathe, using a base coat for protection.</p>
+                        <img class="img" src="pictures/tip38.jpg" alt="Ice on Pimple">
+                    </li>
+                </ol>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>Find us on social media:</p>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </footer>
+</body>
+</html>

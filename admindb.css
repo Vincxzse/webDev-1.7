@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.navigation {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #1f1f1f, #171717);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    
+}
+
+.admin-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.admin-profile > hr {
+    width: 100%;
+    border: 1px solid #555;
+}
+
+.admin-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.admin-header > img {
+    height: 100px;
+    width: 100px;
+}
+
+.admin-header > h2 {
+    color: aliceblue;
+}
+
+.nav-links {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.selection {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.4rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 20px;
+    text-align: left;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.selection:hover {
+    color: #ffffff67;
+}
+
+.show-up {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 30px;
+}
+
+.to-show {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 55px;
+}
+
+.to-show-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+    background-color: red;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+td {
+    word-break: break-all;
+    overflow: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+td > img {
+    width: 100%;
+}
+
+.input-set {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-set > label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.input-set > input,
+.input-set > textarea {
+    height: 35px;
+    padding: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+button {
+    width: 220px;
+    height: 45px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #ddd;
+    background-color: rgb(0, 110, 255);
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    transition: 0.2s !important;
+    background-color: rgba(0, 110, 255, 0.56);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    background-color: #e1d0b9;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+form > input.delete-button {
+    background-color: rgb(0, 110, 255) !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+    padding: 10px 80px !important;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+}
+
+form > input.delete-button:hover {
+    transition: 0.2s !important;
+    background-color: rgba(0, 110, 255, 0.56) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.to-show-form > :nth-child(3) > :nth-child(3) {
+    width: 220px;
+    height: 45px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    background-color: beige;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.to-show-form > :nth-child(3) > :nth-child(3):hover {
+    background-color: #f0e4d7;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.to-show-form > :nth-child(3) > :nth-child(3):active {
+    background-color: #e1d0b9;
+}
